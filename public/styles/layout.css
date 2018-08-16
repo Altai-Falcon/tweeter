@@ -39,6 +39,12 @@ article.tweet {
 	border: 1px solid #eee;
 	margin: 0 auto;
 	width: 75%;
+	opacity: 0.6;
+	transition: 0.3s;
+}
+
+article:hover {
+	opacity:1;
 }
 
 
