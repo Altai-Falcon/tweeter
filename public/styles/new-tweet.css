@@ -1,0 +1,18 @@
+.new-tweet{
+	border:black 1px solid;  
+	border-radius: 25px;
+	margin: 0 auto;
+	width: 75%;
+
+
+}
+
+.newTweetForm{
+	border: 1px solid red;
+	margin: 0 auto;
+	width: 75%;
+}
+
+textarea{
+	width: 100%;
+}
