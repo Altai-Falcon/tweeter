@@ -1,18 +1,30 @@
 .new-tweet{
-	border:black 1px solid;  
-	border-radius: 25px;
-	margin: 0 auto;
-	width: 75%;
+	border:1px solid #a9a8a8;
+	border-radius: 5px;
+	margin: 0 2em 1em 2em;
+	background-color: #eee;
+	padding: 0.5em 0.5em 2em 0.5em
 
 
 }
 
-.newTweetForm{
-	border: 1px solid #eee;
-	margin: 0 auto;
-	width: 75%;
+.new-tweet h2  {
+	text-align: left;
+	border-bottom: 1.5px solid black;
 }
+
 
 textarea{
 	width: 100%;
+	padding: 5px;
 }
+
+form > span.counter {
+	float: right;
+
+}
+
+form > input {
+	float: left;
+}
+
