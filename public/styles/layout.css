@@ -33,6 +33,45 @@ main {
 	height: 100%;
 	padding-top: 80px;
 }
+
+
+article.tweet {
+	border: 1px solid #eee;
+	margin: 0 auto;
+	width: 75%;
+}
+
+
+article.tweet header {
+	background: #eee;
+	padding:10px;
+	min-height: 70px;
+
+}
+
+article.tweet img {
+	float: left;
+	
+}
+
+
+article.tweet div.author {
+	float: left;
+	padding-left: 5px;
+
+}
+
+article.tweet div.handle {
+	float: right;
+	
+}
+
+
+
+
+
+
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
