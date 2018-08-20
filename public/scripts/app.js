@@ -5,12 +5,26 @@
  */
 
 $(document).ready(function() {
+  loadTweets();
 
+  $("#tweetSubmitButton").click(function(event){
+    event.preventDefault();
 
-
-
-
-
+    if ($(".tweetInput").val().trim() === "") {
+      alert("please put your tweet");
+    } else if (($(".tweetInput").val().length > 140)) {
+      alert("your tweet is too long");
+    } else {
+      let $inputTweetText = $(".tweetInput").serialize();
+      $("#tweets-container").empty();
+      $(".tweetInput").val("");
+      $(".counter").text("140");
+      $.post("/tweets", $inputTweetText, function () {
+        loadTweets();
+      }); 
+    }
+  });
+});
 
 
 //part of the function used from https://gist.github.com/flangofas/714f401b63a1c3d84aaa
@@ -25,14 +39,8 @@ function timeStamp(miliseconds) {
   total_hours = parseInt(Math.floor(total_minutes / 60));
   days = parseInt(Math.floor(total_hours / 24));
 
-  
-  
-  
-    return days < 0 ? 0 : days;
-  }
-
-
-
+  return days < 0 ? 0 : days;
+}
 
 function createTweetElement(tweetData) {
 	// return a tweet <article> element containing 
@@ -66,10 +74,8 @@ function createTweetElement(tweetData) {
   $icons.append($retweet);
   $icons.append($heart);
 
-
   return $tweet;
 }
-
 
 function renderTweets(tweets) {
     tweets.forEach((tweetData) => {
@@ -80,15 +86,14 @@ function renderTweets(tweets) {
 
 function loadTweets() {
   //load tweets
-  $.get("/tweets", function(jsonTweets){
-    renderTweets(jsonTweets);  
+  $.get("/tweets", function(data){
+    renderTweets(data);  
   });
 }
 
 
 
 
-loadTweets();
 
 
 
@@ -97,22 +102,15 @@ loadTweets();
 
 
 
-$("#tweetSubmitButton").click(function(event){
-  event.preventDefault();
-  if ($(".tweetInput").val() === "") {
-    alert("please put your tweet");
-    return;
-  }
-  let $inputTweetText = $(".tweetInput").serialize();
-  $.post("/tweets", $inputTweetText, function () {
-    
-  });
-});
 
-});
+
+
+
+
+
 
   
-           
+
            
           
             
