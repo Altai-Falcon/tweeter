@@ -93,13 +93,21 @@ loadTweets();
 
 
 
+
+
+
+
 $("#tweetSubmitButton").click(function(event){
   event.preventDefault();
+  if ($(".tweetInput").val() === "") {
+    alert("please put your tweet");
+    return;
+  }
   let $inputTweetText = $(".tweetInput").serialize();
   $.post("/tweets", $inputTweetText, function () {
     
-  })
-})
+  });
+});
 
 });
 
