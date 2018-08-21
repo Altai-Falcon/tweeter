@@ -24,6 +24,16 @@ $(document).ready(function() {
       }); 
     }
   });
+
+  $("#composeButton").click(function(event){
+    $(".new-tweet").slideToggle();
+    $(".tweetInput").focus();
+  })
+
+
+
+
+
 });
 
 

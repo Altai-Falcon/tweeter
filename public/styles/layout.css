@@ -39,9 +39,7 @@ main.container {
   transition: 0.3s;
 }
 
-:hover {
-  opacity:1;
-}
+
 
 .tweet header {
   background: #eee;
