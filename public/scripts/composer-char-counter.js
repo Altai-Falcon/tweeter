@@ -1,5 +1,4 @@
 $(document).ready(function() {
-	console.log("document.result is ready");
   $(".tweetInput").keyup(function(event){
   	var inputLength = $(this).val().length;
   	var result = 140 - inputLength;
@@ -13,15 +12,7 @@ $(document).ready(function() {
   	} else {
   		theCounter.css("color", "black");
   	}
-
-
-
-  	
   });
-
-
-
-
 });
 
 

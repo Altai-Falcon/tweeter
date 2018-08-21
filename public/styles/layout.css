@@ -39,13 +39,10 @@ main.container {
   transition: 0.3s;
 }
 
-
-
 .tweet header {
   background: #eee;
   padding:10px;
   min-height: 70px;
-
 }
 
 .tweetBody{
@@ -76,7 +73,6 @@ main.container {
 .icons {
   float: right;
   display: none;
-
 }
 
 .tweet:hover .icons {

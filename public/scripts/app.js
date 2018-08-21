@@ -5,10 +5,12 @@
  */
 
 $(document).ready(function() {
+
   loadTweets();
   $(".tweetInput").click(function() {
     $("#error").slideUp();
-  })
+  });
+  
   $("#tweetSubmitButton").click(function(event){
     event.preventDefault();
 
@@ -31,11 +33,6 @@ $(document).ready(function() {
     $(".new-tweet").slideToggle();
     $(".tweetInput").focus();
   })
-
-
-
-
-
 });
 
 
