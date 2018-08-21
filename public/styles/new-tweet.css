@@ -24,3 +24,15 @@ form > input {
   float: left;
 }
 
+#error {
+  border:1px solid #a9a8a8;
+  border-radius: 5px;
+  background-color: orange;
+  display: none;
+  height: 75px;
+  width: 368px;
+  padding: 2em;
+
+}
+
+#error:
