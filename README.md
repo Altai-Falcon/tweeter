@@ -13,5 +13,16 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Dependencies
 
-- Express
-- Node 5.10.x or above
+- body-parser
+- chance
+- express
+- mongodb
+
+## Final Product
+!["After Tweet"](https://github.com/G-Develop/tweeter/blob/master/docs/after%20tweet.png?raw=true)
+
+!["composing a tweet"](https://github.com/G-Develop/tweeter/blob/master/docs/composing%20a%20tweet.png?raw=true)
+
+!["error message"](https://github.com/G-Develop/tweeter/blob/master/docs/error_message.png?raw=true)
+
+!["home page"](https://github.com/G-Develop/tweeter/blob/master/docs/homepage.png?raw=true)
